@@ -352,6 +352,18 @@ body {
   transform: scale(1.2);
 }
 
+.arduinoSvg {
+  color: #00979d;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.arduinoSvg:hover {
+  color: var(--accent-jade);
+  transform: scale(1.2);
+}
+
 .imageCard {
   overflow: hidden;
 }
