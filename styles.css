@@ -396,6 +396,86 @@ body {
   align-items: flex-start;
 }
 
+.proyectos{
+  min-height: 100vh;
+  /* width: 100vw; */
+  display: flex;
+
+  background-color: var(--bg-main);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectsWrapper {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.projectsTrack {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.projectsTrack::-webkit-scrollbar {
+  height: 6px;
+}
+
+.projectsTrack::-webkit-scrollbar-thumb {
+  background-color: var(--accent-jade);
+  border-radius: 4px;
+}
+
+.projectCard {
+  flex: 0 0 340px;
+  border: 2px solid var(--accent-jade);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projectContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.projectTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--accent-jade);
+}
+
+.projectDescription {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.projectActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.projectImage {
+  height: 180px;
+  overflow: hidden;
+  border-bottom: 2px solid var(--accent-jade);
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 .contacto {
   height: 100vh;
   width: 100vw;
@@ -461,3 +541,4 @@ body {
 .linkedinSvg:hover {
   transform: scale(1.2);
 }
+
